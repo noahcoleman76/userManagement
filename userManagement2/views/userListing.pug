@@ -1,0 +1,24 @@
+html
+    head
+        title Show Users
+        style
+            include style.css
+            link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    body
+        div.main
+            table
+                tr.title
+                    each key in Object.keys(users[0])
+                        th= key
+                    th Edit
+                    th Remove
+                each user in users
+                    tr
+                        each prop in user
+                            td= prop
+                        td
+                            a(href='/edit/' + user.id) Edit 
+                                
+                        td
+                            a(href='/remove/' + user.id) Remove
+            a(href='/createUser' class="new newList") Create New User

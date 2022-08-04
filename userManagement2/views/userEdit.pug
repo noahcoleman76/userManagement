@@ -1,0 +1,10 @@
+include ./userForm
+
+html
+    head
+        title New User
+        style
+            include style.css
+    body
+        div.main
+            +userForm('/updateUser', inputs, 'Update Users')

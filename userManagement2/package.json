@@ -1,0 +1,21 @@
+{
+  "name": "Project6SimpleUserManager",
+  "version": "1.0.0",
+  "main": "action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "csv-writer": "^1.5.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "read-and-write": "^1.1.5",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
